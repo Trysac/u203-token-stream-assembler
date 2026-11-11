@@ -9,4 +9,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Added `@trysac/token-stream-assembler` with `createAssembler`, `assemble`, `AssembledMessage`, `ToolCall` and `AssembleError` for assembling OpenAI and Anthropic streaming deltas into validated messages.
 - Initial project structure from the factory utility template.
