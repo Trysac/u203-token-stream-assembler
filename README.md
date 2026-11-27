@@ -1,7 +1,6 @@
 # token-stream-assembler
 
-[![npm version](https://img.shields.io/npm/v/@trysac/token-stream-assembler.svg)](https://www.npmjs.com/package/@trysac/token-stream-assembler)
-[![license: MIT](https://img.shields.io/npm/l/@trysac/token-stream-assembler.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/Trysac/u203-token-stream-assembler/actions/workflows/ci.yml/badge.svg)](https://github.com/Trysac/u203-token-stream-assembler/actions/workflows/ci.yml)
 
 Assemble streamed LLM deltas from OpenAI chat chunks or Anthropic message events into one complete message with text, parsed tool call arguments and stop reason
@@ -16,9 +15,15 @@ snapshots while streaming, and requires no provider SDK or runtime dependency.
 
 ## Install
 
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
 ```sh
-npm install @trysac/token-stream-assembler
+git clone https://github.com/Trysac/u203-token-stream-assembler.git
+cd u203-token-stream-assembler && npm ci && npm run build
+cd ../your-project && npm install ../u203-token-stream-assembler
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/token-stream-assembler"`.
 
 Requires Node.js 20 or newer. The package ships ES modules with TypeScript declarations.
 
